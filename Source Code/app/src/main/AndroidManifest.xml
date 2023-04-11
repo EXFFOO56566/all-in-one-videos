@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.viaviapp.allinonevideo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".ActivityVideoDetails"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".ActivitySearch"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".ActivityForgot"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".ActivityPrivacy"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".ActivityAboutUs"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="ActivityComment"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/ThemeSwipeBack" />
+        <activity
+            android:name=".ActivitySignUp"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ActivitySignIn"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.serverlocal.NoPipServerActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation" />
+        <activity
+            android:name="com.example.serverlocal.PipServerActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:name="com.example.youtube.YoutubePlay"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+        <!-- Daily Motion Play -->
+        <activity
+            android:name="com.example.dailymotion.DailyMotionPlay"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.example.dailymotion.DailyMotionPlayNoPip"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+              android:theme="@android:style/Theme.Black.NoTitleBar" />
+
+        <!-- vimeo play activity -->
+        <activity
+            android:name="com.example.vimeo.Vimeo"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+
+        <activity
+            android:name="com.example.vimeo.VimeoNoPip"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <!-- analytic -->
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+        <!-- analytic -->
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+        <meta-data android:name="com.onesignal.NotificationAccentColor.DEFAULT" android:value="FFff0083" />
+    </application>
+
+</manifest>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bvp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/background">
+
+    <Button
+        android:id="@+id/pip"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pip_square"
+        android:text="@string/pip_mode"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <com.halilibo.bettervideoplayer.BetterVideoPlayer
+        android:id="@+id/bvp"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@+id/pip"
+        android:keepScreenOn="true"
+        bvp:bvp_autoPlay="true" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff0083</color>
+    <color name="colorPrimaryDark">#ff6a00</color>
+    <color name="colorAccent">#ff0083</color>
+
+    <color name="background">#000000</color>
+
+    <color name="navigation_default">#323232</color>
+    <color name="navigation_checked">#ffffff</color>
+    <color name="navigation_item_bg_default">#ffffff</color>
+    <color name="navigation_item_bg_checked">#ff0083</color>
+    <color name="navigation_bg">#ffffff</color>
+    <color name="navigation_bottom_default">#ffffff</color>
+    <color name="navigation_bottom_checked">#ffffff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="card_view_white">#ffffff</color>
+    <color name="text_title">#393939</color>
+    <color name="gray">#727272</color>
+    <color name="comment_divider">#EDEDED</color>
+
+    <color name="switch_thumbTint">#ffffff</color>
+    <color name="switch_trackTint">#ff0083</color>
+
+    <color name="about_title">#404040</color>
+    <color name="about_text">#8D8D8D</color>
+
+    <color name="select_dot">#ff0083</color>
+    <color name="non_select_dot">#A5A5A5</color>
+
+    <color name="circle_normal">#ffffff</color>
+     <color name="login_text">#ff0083</color>
+</resources>

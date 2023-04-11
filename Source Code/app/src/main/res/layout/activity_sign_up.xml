@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/login_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_user" />
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/login_line" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/sign_up_name"
+                    android:inputType="textPersonName"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/circle_normal"
+                    android:textCursorDrawable="@drawable/cursor_white" />
+
+            </LinearLayout>
+
+            <include layout="@layout/row_cross_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_email" />
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/login_line" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/login_email"
+                    android:inputType="textEmailAddress"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/circle_normal"
+                    android:textCursorDrawable="@drawable/cursor_white"
+
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/row_cross_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_password" />
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/login_line" />
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/login_password"
+                    android:inputType="textPassword"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/circle_normal"
+                    android:textCursorDrawable="@drawable/cursor_white"
+
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/row_cross_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_phone" />
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/login_line" />
+
+                <EditText
+                    android:id="@+id/edt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/sign_up_phone"
+                    android:inputType="phone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/circle_normal"
+                    android:textCursorDrawable="@drawable/cursor_white"
+
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/row_cross_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txt_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/already_account_sign_in"
+                    android:textSize="16sp"
+                    android:textColor="@color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/lay_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login"
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="45dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/white" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_login_square"
+                android:text="@string/login_register"
+                android:textColor="@color/login_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
